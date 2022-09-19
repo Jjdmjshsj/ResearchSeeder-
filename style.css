@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Press+Start+2P&display=swap');
+body {
+    font-size: 15pt;
+    margin: 0;
+    height:100vh;
+    background: #333;
+    overflow-y: scroll;
+ }
+
+.menu{
+  width: 100%;
+  height: 50px;
+  background:black;
+  display: flex;
+}
+.titulo{
+  position: fixed;
+  color: #ddd;
+  font-family: 'Cabin', sans-serif;
+  left: 45%;
+  font-size: 10pt;
+}
+.cloud{
+  position:absolute;
+  left: 45%;
+  animation-name: cloud;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes cloud{
+  to{width:50px;
+    height: 50px;
+  }
+}
+.perfil{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translatey(10%);
+  right: 0px;
+}
+
+.lupa{
+  width: 40px;
+  height: 40px;
+  left:10px;
+  transform: translatey(10%);
+}
+
+.pesquisa{
+  width: 100%;
+  height: 40px;
+  background: #1C1C1C;
+  left: 50px;
+  transform: translatey(10%);
+  outline: 0;
+  border: none;
+  padding-left:30px;
+  font-size: 18px;
+  animation-name: pesquisa;
+  animation-duration: 1s;
+  display:none;
+  caret-color:#1E90FF;
+}
+.pesquisa:hover{
+  background: #DDD;
+}
+
+@keyframes pesquisa{
+from{width:0%};
+}
+.close{
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  transform: translatey(10%);
+  animation-name: close;
+  animation-duration: 1.5s;
+  display: none;
+}
+@keyframes close{
+from{opacity: 0};
+}
+
+
+.menu2{
+width:100%;
+height: 50px;
+background: black;
+margin-top:5px;
+display: flex;
+overflow-x: scroll;
+display: none;
+animation-name: menu2;
+animation-duration: 1s;
+}
+@keyframes menu2{
+ from{opacity: 0};
+};
+
+.label{
+  width:40px;
+  height: 40px;
+  transform: translate(0%,10%);
+}
+
+.tag{
+ min-width:100px;
+ height:30px;
+ background: #1C1C1C;
+ color: #ddd;
+ border-radius:50px;
+ margin-left: 10px;
+ transform: translate(0%,20%);
+ text-align: center;
+ padding-top: 2px;
+ font-family: 'Cabin', sans-serif;
+ overflow-x: scroll;
+}
+.tag:hover{
+border: 2px solid white;
+background:#1E90FF;
+color: white;
+}
+
+.caixa {
+width: 100%;
+height:100%;
+background: black;
+opacity: 0.5;
+display: none;
+}
+.menu3{
+  position:fixed;
+  width: 100%;
+  height: 50px;
+  background: black;
+  bottom: 0px;
+  display: flex;
+
+}
+.home{
+  position: relative;
+  width:40px;
+  height: 40px;
+  margin-left: 10px;
+  transform: translateY(10%);
+}
+
+.addcircle {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  transform: translateY(10%);
+  right: 10px;
+}
+.sms {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  transform: translateY(10%);
+  right:10%;
+}
+.mensagem{
+  width: 60%;
+  height: 30px;
+  transform: translateY(20%);
+  outline:0;
+  border-radius:50px;
+  padding-left: 30px;
+  border-color:#1E90FF;
+  background:#1C1C1C;
+  font-size:15pt;
+  caret-color: #1E90FF;
+  color:#ddd;
+
+}
+
+.enviar{
+}
+
+.
